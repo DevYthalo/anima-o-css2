@@ -1,0 +1,42 @@
+body{
+    background-image: url(imagem2.jpg);
+}
+
+
+.cabecalho{
+  display: flex;
+  
+
+}
+
+.menu{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    transform: translate(-50%);
+    z-index: 10;
+    width: min-content;
+}
+
+.menu a{
+    display: block;
+    font-family: 'Lengue gotihc' helvetica,serif;
+    font: size 5vmni;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:var(--menu);
+    padding: .5rem 0;
+    transform: scale(.95);
+    opacity: .25;
+    transition: sacale 550ms linear, opacity 250ms linear;
+}
+
+.menu:hover a:not(:hover){
+    transform: scale(.95);
+    opacity: .25;
+}
+
+.menu a:hover{
+    transform:scale(1);
+    opacity:1;
+}
